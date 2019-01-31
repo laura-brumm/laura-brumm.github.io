@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include '../base/head.twig' %}
+
+    <body>
+        <!-- Header -->
+        {% include 'header.twig' %}
+
+        <!-- Content -->
+        {% block content %}
+        {% endblock %}
+
+        <!-- Footer -->
+        {% include 'footer.twig' %}
+
+        <!-- JavaScript -->
+        <script src="/js/main.min.js"></script>
+    </body>
+</html>

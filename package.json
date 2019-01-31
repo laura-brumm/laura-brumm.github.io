@@ -1,0 +1,53 @@
+{
+  "name": "laurabrumm",
+  "version": "0.1.0",
+  "description": "Code for my personal portfolio.",
+  "scripts": {
+    "browsersync": "browser-sync start --server 'dist' --files 'dist/**/*'",
+    "build": "npm run clean && npm run setup:build && npm run twig:build && npm run img:build && npm run js:build && npm run css:build",
+    "clean": "rm -rf dist",
+    "css:autoprefix": "postcss --use autoprefixer -r dist/css/*.css",
+    "css:build": "npm run css:compile && npm run css:autoprefix",
+    "css:compile": "node-sass --source-map true --output-style compressed src/scss/style.scss dist/css/style.css",
+    "css:critical": "rm -rf dist/css/critical.css && touch dist/css/critical.css && node scripts/critical-css.js",
+    "css:watch": "watch 'npm run css:build' src/scss",
+    "dev": "npm run build && parallelshell 'npm run watch' 'npm run browsersync'",
+    "img:build": "node scripts/imagemin.js",
+    "img:watch": "watch 'npm run img:build' src/img",
+    "twig:build": "node scripts/twig-build.js",
+    "twig:watch": "watch 'npm run twig:build' src/pages src/partials src/data",
+    "js:build": "npm run js:head && npm run js:main",
+    "js:head": "uglifyjs src/js/head/*.js -o dist/js/head.min.js",
+    "js:main": "uglifyjs src/js/main/*.js -o dist/js/main.min.js",
+    "js:watch": "watch 'npm run js:build' src/js/head src/js/main",
+    "setup:build": "mkdir -p dist && mkdir -p dist/css && mkdir -p dist/js && mkdir -p dist/img",
+    "watch": "parallelshell 'npm run twig:watch' 'npm run js:watch' 'npm run css:watch' 'npm run img:watch'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laura-brumm/laura-brumm.github.io.git"
+  },
+  "author": "Laura Brumm (http://laurabrumm.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laura-brumm/laura-brumm.github.io/issues"
+  },
+  "homepage": "https://github.com/laura-brumm/laura-brumm.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "critical": "latest",
+    "glob": "latest",
+    "imagemin": "latest",
+    "imagemin-gifsicle": "latest",
+    "imagemin-jpegtran": "latest",
+    "imagemin-pngquant": "latest",
+    "imagemin-svgo": "^5.2.2",
+    "js-beautify": "latest",
+    "node-sass": "latest",
+    "parallelshell": "3.0.1",
+    "postcss-cli": "latest",
+    "twig": "latest",
+    "uglify-js": "latest",
+    "watch": "latest"
+  }
+}
