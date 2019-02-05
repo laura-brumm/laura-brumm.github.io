@@ -2,6 +2,8 @@
  * Main Styling
  */
 
+@import "frame";
+@import "home";
 @import "variables";
 
 
@@ -13,8 +15,19 @@
 /* ==========
    UNIVERSAL
    ========== */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background: blue;
+    background: #F1EDEA;
+}
+
+.section {
+    padding: 30px;
 }
 
 

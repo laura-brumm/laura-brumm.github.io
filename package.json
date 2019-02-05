@@ -12,7 +12,7 @@
     "css:critical": "rm -rf dist/css/critical.css && touch dist/css/critical.css && node scripts/critical-css.js",
     "css:watch": "watch 'npm run css:build' src/scss",
     "dev": "npm run build && parallelshell 'npm run watch' 'npm run browsersync'",
-    "img:build": "node scripts/imagemin.js",
+    "img:build": "cp -r src/img/* dist/img",
     "img:watch": "watch 'npm run img:build' src/img",
     "twig:build": "node scripts/twig-build.js",
     "twig:watch": "watch 'npm run twig:build' src/pages src/partials src/data",
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/laura-brumm/laura-brumm.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "latest",
+    "autoprefixer": "^8.6.4",
     "critical": "latest",
     "glob": "latest",
     "imagemin": "latest",

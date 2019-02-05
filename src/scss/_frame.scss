@@ -1,0 +1,75 @@
+/* ----- BORDER STYLING ----- */
+
+.border-top,
+.border-right,
+.border-bottom,
+.border-left {
+	position: fixed;
+	background-color: #80767D;
+}
+
+.border-top,
+.border-bottom {
+	width: 100%;
+	height: 30px;
+}
+
+.border-right,
+.border-left {
+	width: 30px;
+	height: 100%;
+}
+
+.border-right {
+	right: 0;
+}
+
+.border-bottom {
+	bottom: 0;
+}
+
+.container_border-name {
+	position: absolute;
+	line-height: 50px;
+	left: 50%;
+	transform: translate(-50%);
+	
+	.first_border-name,
+	.last_border-name {
+		
+		
+	}
+	
+	.first_border-name {
+		font-size: 35px;
+		letter-spacing: 8px;
+		color: #F0EFEF;
+		z-index: 1;
+	}
+	
+	.last_border-name {
+		font-size: 40px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		color: #AB9EA4;
+	}
+}
+
+.container_nav {
+	position: fixed;
+	height: 30px;
+	width: 30px;
+	background-color: #AB9EA4;
+	z-index: 100;
+	left: 30px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	.menu {
+		color: #80767D;
+		font-size: 25px;
+		line-height: 30px;
+		display: block;
+		text-align: center;
+	}
+}
