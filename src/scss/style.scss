@@ -2,9 +2,12 @@
  * Main Styling
  */
 
+@import "variables";
+@import "typography";
 @import "frame";
 @import "home";
-@import "variables";
+
+
 
 
 
@@ -20,10 +23,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
 body {
     background: #F1EDEA;
+}
+
+img {
+    max-width: 100%;
 }
 
 .section {

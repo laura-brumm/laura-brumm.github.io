@@ -1,0 +1,49 @@
+/* ----- TAGS ----- */
+
+.h1 {
+    color: $primary-light;
+    font: {
+        family: $serif;
+        size: 2.25rem;
+        weight: 300;
+    }
+    letter-spacing: 2px;
+    line-height: 2.35rem;
+    margin: {
+        top: 10px;
+        bottom: 15px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1.75rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.5rem;
+        line-height: 1.65rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+
+/* -----   ----- */
+
+.bg_primary {
+    background: $primary;
+    color: $white;
+    font: {
+        family: $sans-serif;
+        size: 3.5rem;
+        weight: 400;
+    }
+    letter-spacing: 5px; 
+    padding: 2px 5px 2px 15px;
+
+    @media (max-width: 1024px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2px 10px;
+    }
+}

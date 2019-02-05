@@ -5,7 +5,7 @@
 .border-bottom,
 .border-left {
 	position: fixed;
-	background-color: #80767D;
+	background: #696167;
 }
 
 .border-top,
@@ -17,7 +17,12 @@
 .border-right,
 .border-left {
 	width: 30px;
-	height: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #897E83 50%, #696167 100%);
+}
+
+.border-top {
+    background: #897E83;
 }
 
 .border-right {
@@ -57,19 +62,43 @@
 
 .container_nav {
 	position: fixed;
-	height: 30px;
-	width: 30px;
-	background-color: #AB9EA4;
+	height: 50px;
+	width: 50px;
+	background-color: $gray;
 	z-index: 100;
-	left: 30px;
-	top: 50%;
+	left: 40px;
+	top: 10%;
 	transform: translate(-50%, -50%);
 	
 	.menu {
-		color: #80767D;
-		font-size: 25px;
-		line-height: 30px;
+		color: $offwhite;
+		font-size: 30px;
+		line-height: 50px;
 		display: block;
 		text-align: center;
+	}
+}
+
+.container_social {
+	position: fixed;
+	height: auto;
+	width: 50px;
+	background-color: $gray;
+	z-index: 100;
+	left: 40px;
+	top: 80%;
+	transform: translate(-50%, -50%);
+	
+	.item_social {
+		list-style-type: none;
+
+		.social {
+			color: $offwhite;
+			font-size: 30px;
+			line-height: 30px;
+			display: block;
+			text-align: center;
+			padding: 10px;
+		}
 	}
 }
