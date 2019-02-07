@@ -1,0 +1,18 @@
+.section_about {
+    width: 100%;
+
+    .container_about {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border: {
+            top: 5px solid $secondary;
+            bottom: 5px solid $secondary;
+        }
+        margin-bottom: 50px;
+
+        .split-content {
+            width: 50%;
+        }
+    }
+}

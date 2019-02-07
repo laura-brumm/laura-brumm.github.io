@@ -5,7 +5,7 @@
 .border-bottom,
 .border-left {
 	position: fixed;
-	background: #696167;
+	background: $secondary;
 }
 
 .border-top,
@@ -18,11 +18,12 @@
 .border-left {
 	width: 30px;
     height: 100%;
-    background: linear-gradient(to bottom, #897E83 50%, #696167 100%);
+	/* background: linear-gradient(to bottom, #897E83 50%, #696167 100%); */
+	background: linear-gradient(to bottom, $secondary-light 50%, $secondary 100%);
 }
 
 .border-top {
-    background: #897E83;
+    background: $secondary-light;
 }
 
 .border-right {
@@ -66,9 +67,8 @@
 	width: 50px;
 	background-color: $gray;
 	z-index: 100;
-	left: 40px;
-	top: 10%;
-	transform: translate(-50%, -50%);
+	left: 30px;
+	top: 60px;
 	
 	.menu {
 		color: $offwhite;
@@ -85,9 +85,8 @@
 	width: 50px;
 	background-color: $gray;
 	z-index: 100;
-	left: 40px;
-	top: 80%;
-	transform: translate(-50%, -50%);
+	left: 30px;
+	bottom: 60px;
 	
 	.item_social {
 		list-style-type: none;

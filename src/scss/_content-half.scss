@@ -1,0 +1,36 @@
+/* ----- CONTENT HALF BLOCK ----- */
+
+.block_content-half {
+    width: 100%;
+
+    .bg_dark,
+    .bg_light {
+        width: 100%;
+    }
+
+    .bg_dark {
+        background: $secondary;
+
+        .dark-side {
+            color: $white;
+        }
+    }
+
+    .bg_light {
+
+        .light-side {
+            color: $secondary;
+        }
+    }
+
+    .container_content-half {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 500px;
+        padding: 30px 50px;
+
+        .icon {
+            font-size: 50px;
+        }
+    }
+}

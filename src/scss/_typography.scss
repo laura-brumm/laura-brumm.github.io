@@ -9,7 +9,7 @@
     }
     letter-spacing: 2px;
     line-height: 2.35rem;
-    margin: {
+    padding: {
         top: 10px;
         bottom: 15px;
     }
@@ -23,6 +23,28 @@
         line-height: 1.65rem;
         letter-spacing: 1.5px;
     }
+}
+
+.h2 {
+    font: {
+        family: $serif;
+        size: 2rem;
+        weight: 400;
+    }
+    letter-spacing: 1.75px;
+    padding: {
+        top: 15px;
+        bottom: 25px;
+    }
+}
+
+.p {
+    font: {
+        family: $sans-serif;
+        size: 1.25rem;
+        weight: 200;
+    }
+    padding-bottom: 15px;
 }
 
 
