@@ -1,11 +1,15 @@
 /* ----- HOME PAGE ----- */
 
+.section_home {
+    height: 100vh;
+    display: flex;
+}
+
 .container_home {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    height: 90vh;
     width: 100%;
 
     @media (max-width: 768px) {
