@@ -4,6 +4,7 @@
     .container_about {
         width: 100%;
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-evenly;
         border: {
             top: 5px solid $secondary;
@@ -11,8 +12,17 @@
         }
         margin-bottom: 50px;
 
+        @media (max-width: 768px) {
+            display: block;
+            border: 0;
+        }
+
         .split-content {
             width: 50%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 }
