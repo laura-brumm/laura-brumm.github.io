@@ -1,0 +1,15 @@
+
+
+<div class="block block--project"> 
+    <div class="block__img">
+        <a href="{{ link }}" target="_blank"><img src="{{ image }}" ></a>
+    </div>
+    <div class="block__content">
+        <p class="p">{{ name }}</p>
+        <ul class="ul">
+            {% for skill in skills %}
+                <li class="li p">{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

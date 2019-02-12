@@ -1,0 +1,16 @@
+.block--project {
+    width: 100%;
+
+    .block__img {
+        padding-bottom: 20px;
+    }
+
+    .block__content {
+        .ul {
+            .li {
+                text-decoration: none;
+                display: inline-block;
+            }
+        }   
+    }
+}

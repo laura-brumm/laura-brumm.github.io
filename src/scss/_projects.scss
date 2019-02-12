@@ -1,0 +1,27 @@
+.section--projects {
+
+    .container--projects {
+        width: 100%;
+        text-align: center;
+
+        .container__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .column {
+                flex: 1 auto;
+                padding: 10px;
+                max-width: 20%;
+            }
+        }  
+    }
+
+    .container--skills {
+        width: 100%;
+
+        .h3 {
+            text-align: center;
+        }
+    }
+}

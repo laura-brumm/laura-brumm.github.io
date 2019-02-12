@@ -38,6 +38,20 @@
     }
 }
 
+.h3 {
+    font: {
+        family: $sans-serif;
+        size: 1.75rem;
+        weight: 400;
+    }
+    letter-spacing: 1.5px;
+    padding: {
+        top: 15px;
+        bottom: 25px;
+    }
+    text-transform: uppercase;
+}
+
 .p {
     font: {
         family: $sans-serif;

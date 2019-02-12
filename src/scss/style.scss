@@ -6,8 +6,10 @@
 @import "typography";
 @import "frame";
 @import "home";
-@import "content-half";
+@import "block-content-half";
 @import "about";
+@import "block-project";
+@import "projects";
 
 
 
@@ -37,7 +39,7 @@ img {
 }
 
 .section {
-    padding: 30px;
+    padding: 75px 30px;
 }
 
 
