@@ -11,14 +11,64 @@
                 } %}
             </div>
             <div class="column">
-                {% include '../blocks/block-project.twig' %}
-            </div> 
+                {% include '../blocks/block-project.twig' with {
+                    'link': 'https://www.target.com/',
+                    'image': 'https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+                    'name': 'Project Name',
+                    'skills': ['skill1', 'skill2', 'skill3']
+                } %}
+            </div>
+            <div class="column">
+                {% include '../blocks/block-project.twig' with {
+                    'link': 'https://www.target.com/',
+                    'image': 'https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+                    'name': 'Project Name',
+                    'skills': ['skill1', 'skill2', 'skill3']
+                } %}
+            </div>
+            <div class="column">
+                {% include '../blocks/block-project.twig' with {
+                    'link': 'https://www.target.com/',
+                    'image': 'https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+                    'name': 'Project Name',
+                    'skills': ['skill1', 'skill2', 'skill3']
+                } %}
+            </div>
+            <div class="column">
+                {% include '../blocks/block-project.twig' with {
+                    'link': 'https://www.target.com/',
+                    'image': 'https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+                    'name': 'Project Name',
+                    'skills': ['skill1', 'skill2', 'skill3']
+                } %}
+            </div>
+            <div class="column">
+                {% include '../blocks/block-project.twig' with {
+                    'link': 'https://www.target.com/',
+                    'image': 'https://images.unsplash.com/photo-1514418197935-e0cac2bb695a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+                    'name': 'Project Name',
+                    'skills': ['skill1', 'skill2', 'skill3']
+                } %}
+            </div>
         </div>
     </div>
     <div class="container container--skills">
         <h3 class="h3">Skills</h3>
-        <ul>
-            <li></li>
-        </ul>
+        <div class="container__content">
+            <div class="column">
+                <ul class="ul">
+                    <li class="li p">// HTML //</li>
+                    <li class="li p">// CSS //</li>
+                    <li class="li p">// Sass //</li>
+                    <li class="li p">// Bootstrap //</li>
+                    <li class="li p">// Responsive Web Design //</li>
+                    <li class="li p">// Git //</li>
+                    <li class="li p">// Command Line //</li>
+                    <li class="li p">// WordPress //</li>
+                    <li class="li p">// JavaScript //</li>
+                    <li class="li p">// Twig //</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
