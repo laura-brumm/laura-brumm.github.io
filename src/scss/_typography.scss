@@ -64,6 +64,35 @@
 
 /* -----   ----- */
 
+.button_primary {
+    background-color: $primary;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 3px;
+    font: {
+        family: $sans-serif;
+        size: 1.25rem;
+        weight: 600;
+    }
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    margin: 40px auto;
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.button_primary:hover {
+    background-color: $white;
+    color: $primary;
+    border: 2px solid $primary;
+}
+
+
+/* -----   ----- */
+
 .bg_primary {
     background: $primary;
     color: $white;
