@@ -1,56 +1,80 @@
 .section--contact {
-    width: 100%;
+    max-width: 100%;
+    margin: {
+        left: 30px;
+        right: 30px;
+    }
+
     background: $secondary;
 
     .container--contact {
-        max-width: 750px;
+        max-width: 100%;
         margin: 0 auto;
 
-        .h3 {
-            text-align: center;
+        .container--heading,
+        .container--link,
+        .container--social {
+            width: 75%;
+            margin: 0 auto;
+            padding: {
+                left: 50px;
+                right: 50px;
+            }
+
+            @media(max-width: 580px) {
+                width: 100%;
+            }
         }
 
-        .container--form {
+        .container--heading {
+            text-align: center; 
 
-            .identity {
+            .h2 {
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+
+        .container--social {
+            height: auto;
+            padding: 50px 0;
+
+            .list--social {
+                width: 100%;
                 display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                .name,
-                .email {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            
+                .item--social {
+                    list-style-type: none;
                     flex: 1 auto;
-                    padding: 10px;
-                    margin: {
-                        top: 10px;
-                        bottom: 10px;
+                    align-self: center;
+                    text-align: center;
+
+                    @media (max-width: 536px) {
+                        width: 33.33%;
+                    }
+
+                    @media (max-width: 385px) {
+                        width: 50%;
+                    }
+
+                    .social {
+                        color: $offwhite;
+                        font-size: 3rem;
+                        display: block;
+                        padding: 10px;
+                        transition: 0.25s ease-in-out;
+
+                        &:hover {
+                            transition: 0.25s ease-in-out;
+                            transform: scale(1.25); 
+                            color: $secondary-light;
+                        }
                     }
                 }
-
-                .name {
-                    margin-right: 10px;
-                }
-
-                .email {
-                    margin-left: 10px;
-                }
-            }
-
-            .textarea {
-                width: 100%;
-                max-width: 100%;
-                display: block;
-                padding: 10px;
-                margin: 10px auto;
-
-            }
-
-            .submit {
-                
-                
             }
         }
-
-
     }
 }
