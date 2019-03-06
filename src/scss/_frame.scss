@@ -5,7 +5,7 @@
 .border-bottom,
 .border-left {
 	position: fixed;
-	background: #254442;
+	background: $black;
 }
 
 .border-top,
@@ -23,9 +23,9 @@
 
 .border-top {
 	height: 30px;
-	border-bottom: 3px solid #254442;
+	border-bottom: 3px solid $black;
 	top: 0;
-    background: #F5F4F5;
+    background: $white;
 }
 
 .border-right {
@@ -34,9 +34,9 @@
 
 .border-bottom {
 	height: 30px;
-	border-top: 3px solid #254442;
+	border-top: 3px solid $black;
 	bottom: 0;
-    background: #F5F4F5;
+    background: $white;
 }
 
 .border-left {
@@ -74,7 +74,7 @@
 	position: fixed;
 	height: 50px;
 	width: 50px;
-	background-color: $gray;
+	background-color: $gray-light;
 	z-index: 100;
 	left: 30px;
 	top: 50%;

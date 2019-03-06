@@ -5,7 +5,7 @@
         right: 30px;
     }
 
-    background: $secondary;
+    background: $white;
 
     .container--contact {
         max-width: 100%;
@@ -30,7 +30,7 @@
             text-align: center; 
 
             .h2 {
-                color: $white;
+                color: $secondary;
                 margin-bottom: 0;
             }
         }
@@ -61,7 +61,7 @@
                     }
 
                     .social {
-                        color: $offwhite;
+                        color: $primary;
                         font-size: 3rem;
                         display: block;
                         padding: 10px;
@@ -70,7 +70,7 @@
                         &:hover {
                             transition: 0.25s ease-in-out;
                             transform: scale(1.25); 
-                            color: $secondary-light;
+                            color: $primary-light;
                         }
                     }
                 }

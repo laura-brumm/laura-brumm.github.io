@@ -5,8 +5,13 @@
     }
 
     .container--projects {
+        background: $offwhite;
         width: 100%;
         text-align: center;
+
+        .h2 {
+            color: $primary;
+        }
 
         .container__content {
             display: flex;
