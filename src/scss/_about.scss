@@ -7,8 +7,8 @@
         flex-direction: row-reverse;
         justify-content: space-evenly;
         border: {
-            top: 5px solid $secondary;
-            bottom: 5px solid $secondary;
+            top: 10px solid $secondary;
+            bottom: 10px solid $secondary;
         }
 
         @media (max-width: 768px) {
