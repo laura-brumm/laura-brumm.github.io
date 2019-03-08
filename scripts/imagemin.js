@@ -9,7 +9,7 @@ const imageminSvgo = require('imagemin-svgo');
 
 // Variables
 const srcImgDir = 'src/img/';
-const distImgDir = 'dist/img/';
+const distImgDir = 'docs/img/';
 
 // Optimize the images
 imagemin([srcImgDir + '*.{jpg,jpeg,gif,png,svg}'], distImgDir, {

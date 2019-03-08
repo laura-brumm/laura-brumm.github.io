@@ -12,7 +12,7 @@ const srcDir = 'src/';
 const srcPagesDir = srcDir + 'pages/';
 const srcPartialsDir = srcDir + 'partials/';
 const srcDataDir = srcDir + 'data/';
-const distDir = 'dist/';
+const distDir = 'docs/';
 
 // Merge two JSON files
 var mergeJSON = (file1, file2) => {

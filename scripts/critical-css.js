@@ -4,7 +4,7 @@
 const critical = require('critical');
 
 // Variables
-const distDir = 'dist/';
+const distDir = 'docs/';
 const criticalFilePath = distDir + 'css/critical.css';
 
 // Generate our critical CSS file
