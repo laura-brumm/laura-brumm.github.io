@@ -3,9 +3,12 @@
     margin-left: 30px;
     margin-right: 30px;
 
-    @media (max-width: 768px) {
-        padding-top: 0 !important;
-    }
+    @media (max-width: 450px) {
+		margin: {
+            left: 15px;
+            right: 15px;
+        }
+	}
 
     .container--projects {
         background: $offwhite;
@@ -16,23 +19,24 @@
             color: $black;
         }
 
+
         .container__content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 0 25px 75px 25px;
+            justify-content: flex-start;
 
             .column {
                 flex: 1 auto;
                 padding: 25px;
                 max-width: 33.333%;
 
-                @media (max-width: 768px) {
+                @media (max-width: 1100px) {
                     max-width: 50%;
                 }
 
-                @media (max-width: 535px) {
+                @media (max-width: 767px) {
                     max-width: 100%;
+                    padding: 25px 0;
                 }
             }
         }  

@@ -25,22 +25,38 @@
 	height: 30px;
 	border-bottom: 3px solid $primary;
 	top: 0;
-    background: $white;
+	background: $white;
+	
+	@media (max-width: 450px) {
+		height: 15px;
+	}
 }
 
 .border-right {
 	right: 30px;
+
+	@media (max-width: 450px) {
+		right: 15px;
+	}
 }
 
 .border-bottom {
 	height: 30px;
 	border-top: 3px solid $primary;
 	bottom: 0;
-    background: $white;
+	background: $white;
+	
+	@media (max-width: 450px) {
+		height: 15px;
+	}
 }
 
 .border-left {
 	left: 30px;
+
+	@media (max-width: 450px) {
+		left: 15px;
+	}
 }
 
 .container_border-name {
