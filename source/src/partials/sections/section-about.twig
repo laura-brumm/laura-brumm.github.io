@@ -1,0 +1,12 @@
+<div class="section section_about">
+    <div class="container container_about">
+        <div class="split-content">
+            {% include '../blocks/block-content-half.twig' %}
+        </div>
+        <div class="split-content">
+            {% include '../blocks/block-content-half.twig' with {
+                'lightMode': true
+            } %}
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "name": "laurabrumm",
+  "version": "0.1.0",
+  "description": "Code for my personal portfolio.",
+  "scripts": {
+    "browsersync": "browser-sync start --server '../' --files '../**/*'",
+    "build": "npm run twig:build && npm run img:build && npm run js:build && npm run css:build",
+    "css:autoprefix": "postcss --use autoprefixer -r ../css/*.css",
+    "css:build": "npm run css:compile && npm run css:autoprefix",
+    "css:compile": "node-sass --source-map true --output-style compressed src/scss/style.scss ../css/style.css",
+    "css:watch": "watch 'npm run css:build' src/scss",
+    "dev": "npm run build && parallelshell 'npm run watch' 'npm run browsersync'",
+    "img:build": "cp -r src/img/* ../img",
+    "img:watch": "watch 'npm run img:build' src/img",
+    "twig:build": "node scripts/twig-build.js",
+    "twig:watch": "watch 'npm run twig:build' src/pages src/partials src/data",
+    "js:build": "npm run js:head && npm run js:main",
+    "js:head": "uglifyjs src/js/head/*.js -o ../js/head.min.js",
+    "js:main": "uglifyjs src/js/main/*.js -o ../js/main.min.js",
+    "js:watch": "watch 'npm run js:build' src/js/head src/js/main",
+    "watch": "parallelshell 'npm run twig:watch' 'npm run js:watch' 'npm run css:watch' 'npm run img:watch'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laura-brumm/laura-brumm.github.io.git"
+  },
+  "author": "Laura Brumm (http://laurabrumm.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laura-brumm/laura-brumm.github.io/issues"
+  },
+  "homepage": "https://github.com/laura-brumm/laura-brumm.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "glob": "latest",
+    "js-beautify": "latest",
+    "node-sass": "latest",
+    "parallelshell": "3.0.1",
+    "postcss-cli": "latest",
+    "twig": "latest",
+    "uglify-js": "latest",
+    "watch": "latest"
+  }
+}
